@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../models/culinaryModels.dart';
 
 class DetailPage extends StatelessWidget {
@@ -16,10 +15,9 @@ class DetailPage extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.favorite),
-            color: Colors.red,
-            tooltip: 'Favorite',
+            color: Colors.grey,
             onPressed: () {
-              
+              Colors.red;
             },
           ),
         ],

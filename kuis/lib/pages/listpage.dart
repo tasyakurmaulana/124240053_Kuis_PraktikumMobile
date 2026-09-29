@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Library Page"),
+        title: const Text("Culinary List Page"),
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
         itemBuilder: (context, index) {
           return ListTile(
             title: Text(culinaryList[index].name),
-            subtitle: Text(culinaryList[index].category),
+            subtitle: Text('${culinaryList[index].category} berasal dari ${culinaryList[index].origin}'),
             leading: Image.network(culinaryList[index].imageUrl),
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {

@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+
 import '../models/culinaryModels.dart';
 
 class DetailPage extends StatelessWidget {
@@ -41,7 +41,6 @@ class DetailPage extends StatelessWidget {
 
               const SizedBox(height: 8),
 
-
               Text(
                 'Asal: ${_culinaryModel.origin}',
                 style: const TextStyle(fontSize: 16),
@@ -69,20 +68,14 @@ class DetailPage extends StatelessWidget {
 
               const Text(
                 'Deskripsi',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
 
               const SizedBox(height: 8),
 
               Text(
                 _culinaryModel.description,
-                style: const TextStyle(
-                  fontSize: 16,
-                  height: 1.5,
-                ),
+                style: const TextStyle(fontSize: 16, height: 1.5),
                 textAlign: TextAlign.justify,
               ),
 
@@ -95,7 +88,7 @@ class DetailPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: const Text('Kembali ke Home'),
+                  child: const Text('Kembali ke Culinary List Page'),
                 ),
               ),
             ],

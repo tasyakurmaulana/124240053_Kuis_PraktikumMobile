@@ -13,6 +13,16 @@ class DetailPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(_culinaryModel.name),
         backgroundColor: Colors.green,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.favorite),
+            color: Colors.red,
+            tooltip: 'Favorite',
+            onPressed: () {
+              
+            },
+          ),
+        ],
       ),
 
       body: SingleChildScrollView(
@@ -75,6 +85,21 @@ class DetailPage extends StatelessWidget {
 
               Text(
                 _culinaryModel.description,
+                style: const TextStyle(fontSize: 16, height: 1.5),
+                textAlign: TextAlign.justify,
+              ),
+
+              const SizedBox(height: 20),
+
+              const Text(
+                'Informasi lebih lanjut',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+
+              const SizedBox(height: 8),
+
+              Text(
+                _culinaryModel.wikipediaUrl,
                 style: const TextStyle(fontSize: 16, height: 1.5),
                 textAlign: TextAlign.justify,
               ),

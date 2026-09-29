@@ -13,6 +13,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Culinary List Page"),
         automaticallyImplyLeading: false,
+        backgroundColor: Colors.green,
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
